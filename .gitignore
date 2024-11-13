@@ -1,0 +1,18 @@
+# MongoDB data folder
+data
+
+# Bruno folder
+bruno
+
+# Python
+__pycache__
+.venv
+
+# VS Code
+.vscode
+
+# MacOS
+.DS_Store
+
+# Env
+.env
