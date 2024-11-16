@@ -24,8 +24,8 @@ This project is a FastAPI application that interacts with MongoDB and Neo4j to p
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/movie-db-api.git
-   cd movie-db-api
+   git clone https://github.com/maxencebonamy/pymongo.git
+   cd pymongo
    ```
 
 2. Set up a virtual environment (optional but recommended):
