@@ -22,7 +22,7 @@ def index_movies(request: Request):
     if actor_filter:
         query["cast"] = {"$elemMatch": {"$regex": Regex(actor_filter, "i")}}
 
-        # Paginate the movies
+    # Paginate the movies
     collection = request.app.database["movies"]
     return utils.paginate(collection, query, page, limit)
 

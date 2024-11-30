@@ -3,12 +3,19 @@
 This project is a FastAPI application that interacts with MongoDB and Neo4j to provide APIs for movie and people data. It includes features to query common movies, people who rated specific movies, and details about people ratings.
 
 ## Features
-- List all movies 
+- List all movies
+`GET /movies`
 - List a specific movie - the name of the movie or the name of the actor are given in parameter 
+`GET /movies?title_filter=Titanic`
+`GET /movies?actor_filter=DiCaprio`
 - Update information about a specific movie - the name of the movie is given in parameter
+`PATCH /movies/Titanic`
 - Return the number of movies common between mongoDB database & neo4j database 
+`GET /movies/common`
 - List users who rated a movie - the name of the movie is given in parameter 
+`GET /movies/people_who_rated?title=Titanic`
 - Return a user with the number of movies he has rated and the list of rated movies - the name of the user is given in parameter 
+`GET /movies/rating?person_name=Leonardo`
 ---
 
 ## Requirements

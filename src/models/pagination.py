@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import List, TypeVar, Generic, Union
 
-
+# PaginationMeta contains all information about current page when a response is paginated
 class PaginationMeta(BaseModel):
     page: int
     limit: int
@@ -14,7 +14,7 @@ class PaginationMeta(BaseModel):
 
 T = TypeVar('T')
 
-
+# PaginationResponse contains both the metadata and the data that consists of an array of objects
 class PaginationResponse(BaseModel, Generic[T]):
     meta: PaginationMeta
     data: List[T]
